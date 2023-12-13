@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: rgb(129,126,177);
+    background: linear-gradient(60deg, rgba(129,126,177,1) 0%, rgba(45,103,155,1) 53%, rgba(31,196,229,1) 97%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 440px;
+    background-color: transparent;
+    margin: 100px auto 20px;
+    padding: 40px 30px 40px;
+    border: 2px solid rgb(12, 12, 41);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 30vh;
+}
+h2{ 
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.row input,button{
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+}
+.row input{
+    margin-top: 20px;
+    background-color: transparent;
+    border-bottom: 1.5px solid black;
+}
+.row input::placeholder{
+    color: black;
+}
+.row button{
+    cursor: pointer;
+    border-radius: 10px;
+}
+.row button:hover{
+   color: white;
+   background-color: rgba(26, 27, 102, 0.647);
+   transition: all 0.2s;
+}
+.qr-code{
+    width: 100%;
+    margin: 50px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 2s;
+}
+.active1{
+    height: 60vh;
+    transition: height 1.5s;
+}
